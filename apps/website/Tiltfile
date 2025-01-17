@@ -1,0 +1,5 @@
+local_resource(
+  'run app',
+  cmd='pnpm dev',
+  labels='local dev'
+)
