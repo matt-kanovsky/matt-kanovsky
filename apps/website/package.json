@@ -6,7 +6,8 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "wrangler dev",
-    "typecheck": "react-router typegen && tsc -b"
+    "typecheck": "react-router typegen && tsc -b",
+    "deploy:wrangler": "wrangler pages deploy ./build/client"
   },
   "engines": {
     "node": ">=22"
