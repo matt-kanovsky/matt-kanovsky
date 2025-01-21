@@ -1,8 +1,18 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "remix-cloudflare-workers-template"
+
+main = "./server.ts"
 workers_dev = true
-name = "my-react-router-worker"
-compatibility_date = "2024-11-18"
-main = "./build/server/index.js"
-assets = { directory = "./build/client/" }
+# https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_date = "2025-01-20"
+
+[assets]
+# https://developers.cloudflare.com/workers/static-assets/binding/
+binding = "ASSETS"
+directory = "./build/client"
+
+[build]
+command = "pnpm run build"
 
 [vars]
 VALUE_FROM_CLOUDFLARE = "Hello from Cloudflare"

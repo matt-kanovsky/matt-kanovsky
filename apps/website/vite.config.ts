@@ -3,14 +3,7 @@ import { cloudflareDevProxy } from '@react-router/dev/vite/cloudflare';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export default defineConfig(({ isSsrBuild }) => ({
-  build: {
-    rollupOptions: isSsrBuild
-      ? {
-          input: './workers/app.ts',
-        }
-      : undefined,
-  },
+export default defineConfig({
   plugins: [
     cloudflareDevProxy({
       getLoadContext({ context }) {
@@ -20,4 +13,15 @@ export default defineConfig(({ isSsrBuild }) => ({
     reactRouter(),
     tsconfigPaths(),
   ],
-}));
+  ssr: {
+    resolve: {
+      conditions: ['workerd', 'worker', 'browser'],
+    },
+  },
+  resolve: {
+    mainFields: ['browser', 'module', 'main'],
+  },
+  build: {
+    minify: true,
+  },
+});
