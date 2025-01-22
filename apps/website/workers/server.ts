@@ -1,7 +1,7 @@
 import { createRequestHandler, type ServerBuild } from 'react-router';
 import { getLoadContext } from './context';
 
-// @ts-ignore-error - this file won’t exist if it hasn’t yet been built
+// @ts-expect-error - This file won’t exist if it hasn’t yet been built
 import * as build from '../build/server';
 
 const requestHandler = createRequestHandler(build as unknown as ServerBuild);
