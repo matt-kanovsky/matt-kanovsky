@@ -14,7 +14,7 @@ export default {
         context: {
           cloudflare: {
             // This object matches the return value from Wrangler's
-            // `getPlatformProxy` used during development via Remix's
+            // `getPlatformProxy` used during development via React Routers's
             // `cloudflareDevProxyVitePlugin`:
             // https://developers.cloudflare.com/workers/wrangler/api/#getplatformproxy
             // @ts-expect-error - virtual module provided by React Router at build time

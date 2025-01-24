@@ -4,6 +4,9 @@ import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
+  build: {
+    minify: true,
+  },
   plugins: [
     cloudflareDevProxy({
       getLoadContext({ context }) {
@@ -13,15 +16,12 @@ export default defineConfig({
     reactRouter(),
     tsconfigPaths(),
   ],
-  // ssr: {
-  //   resolve: {
-  //     conditions: ['workerd', 'worker', 'browser'],
-  //   },
-  // },
-  // resolve: {
-  //   mainFields: ['browser', 'module', 'main'],
-  // },
-  build: {
-    minify: true,
+  ssr: {
+    resolve: {
+      conditions: ['workerd', 'worker', 'browser'],
+    },
+  },
+  resolve: {
+    mainFields: ['browser', 'module', 'main'],
   },
 });
