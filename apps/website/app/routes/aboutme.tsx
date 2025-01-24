@@ -1,3 +1,5 @@
+import { css } from 'styled-system/css';
+
 export default function AboutMe() {
-  return <div>The Dolla Boy Wonder</div>;
+  return <div className={css({ color: 'lime' })}>The Dolla Bill Wonder</div>;
 }
