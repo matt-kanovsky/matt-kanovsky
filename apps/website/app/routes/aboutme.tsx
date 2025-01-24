@@ -1,3 +1,3 @@
 export default function AboutMe() {
-  return <div>The Dolla Boy Wonder</div>;
+  return <div>The Dolla Bill Wonder</div>;
 }
