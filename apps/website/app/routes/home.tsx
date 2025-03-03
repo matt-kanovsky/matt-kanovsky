@@ -38,7 +38,7 @@ function Welcome() {
             height: '100%',
           })}
         >
-          <div className={css({ alignSelf: 'start' })}>MATT</div>
+          <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiUltrabold', fontSize: '30px' })}>matt</div>
           <div className={css({ alignSelf: 'start', justifySelf: 'end' })}>who</div>
           <div className={css({ alignSelf: 'end' })}>what</div>
           <div className={css({ alignSelf: 'end', justifySelf: 'end' })}>why</div>

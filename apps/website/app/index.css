@@ -1,1 +1,6 @@
 @layer reset, base, tokens, recipes, utilities;
+
+@font-face {
+  font-family: 'NikkeiUltrabold';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf');
+}
