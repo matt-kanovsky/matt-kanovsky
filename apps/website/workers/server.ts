@@ -1,36 +1,29 @@
-import { createRequestHandler, type ServerBuild } from 'react-router';
-import { getLoadContext } from './context';
+import { createRequestHandler } from "react-router";
 
-// @ts-expect-error - This file won’t exist if it hasn’t yet been built
-import * as build from '../build/server';
+declare module 'react-router' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  export interface AppLoadContext {
+    cloudflare: {
+      env: CloudflareEnvironment;
+      ctx: ExecutionContext;
+    };
+  }
+}
 
-const requestHandler = createRequestHandler(build as unknown as ServerBuild);
+declare global {
+  interface CloudflareEnvironment extends Env {}
+}
+
+const requestHandler = createRequestHandler(
+  // @ts-expect-error - virtual module provided by React Router at build time
+  () => import("virtual:react-router/server-build"),
+  import.meta.env.MODE
+);
 
 export default {
-  async fetch(request, env, ctx) {
-    try {
-      const loadContext = getLoadContext({
-        request,
-        context: {
-          cloudflare: {
-            // This object matches the return value from Wrangler's
-            // `getPlatformProxy` used during development via React Routers's
-            // `cloudflareDevProxyVitePlugin`:
-            // https://developers.cloudflare.com/workers/wrangler/api/#getplatformproxy
-            // @ts-expect-error - virtual module provided by React Router at build time
-            cf: request.cf,
-            ctx: {
-              waitUntil: ctx.waitUntil.bind(ctx),
-              passThroughOnException: ctx.passThroughOnException.bind(ctx),
-            },
-            env,
-          },
-        },
-      });
-      return await requestHandler(request, loadContext);
-    } catch (error) {
-      console.log(error);
-      return new Response('An unexpected error occurred', { status: 500 });
-    }
+  fetch(request, env, ctx) {
+    return requestHandler(request, {
+      cloudflare: { env, ctx },
+    });
   },
-} satisfies ExportedHandler<Env>;
+} satisfies ExportedHandler<CloudflareEnvironment>;
