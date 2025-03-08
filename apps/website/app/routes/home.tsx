@@ -12,7 +12,6 @@ function Welcome() {
   return (
     <main>
       <div className={flex({ flexDirection: 'column', height: '100vh' })}>
-        <header>Ayo ! How did you end up here ?</header>
         <nav
           className={flex({
             flexDirection: 'column',
@@ -38,10 +37,10 @@ function Welcome() {
             height: '100%',
           })}
         >
-          <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiUltrabold', fontSize: '30px' })}>matt</div>
-          <div className={css({ alignSelf: 'start', justifySelf: 'end' })}>who</div>
-          <div className={css({ alignSelf: 'end' })}>what</div>
-          <div className={css({ alignSelf: 'end', justifySelf: 'end' })}>why</div>
+          <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiJournal-Ultrabold', fontSize: '30px' })}>matt</div>
+          <div className={css({ alignSelf: 'start', fontFamily: 'EditorialNew-Regular', justifySelf: 'end' })}>who</div>
+          <div className={css({ alignSelf: 'end', fontFamily: 'EditorialNew-Regular' })}>what</div>
+          <div className={css({ alignSelf: 'end', justifySelf: 'end', fontFamily: 'EditorialNew-Regular' })}>why</div>
         </div>
       </div>
     </main>
