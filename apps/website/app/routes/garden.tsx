@@ -17,7 +17,7 @@ export default function Garden() {
           gap: '20px',
         })}
       >
-        <NavLink to="/home" end>
+        <NavLink to="/home" end className = {css({ color: 'white', fontFamily: 'LettraMono-Medium', fontSize: '28px' })}>
           Enter
         </NavLink>
         <div className={hstack({ gap: '20px', justifySelf: 'center' })}>

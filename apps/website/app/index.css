@@ -1,1 +1,81 @@
 @layer reset, base, tokens, recipes, utilities;
+
+@font-face {
+  font-family: 'NikkeiJournal-Ultrabold';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf');
+}
+
+@font-face {
+  font-family: 'NikkeiJournal-Bold';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Bold.otf');
+}
+
+@font-face {
+  font-family: 'NikkeiJournal-Light';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Light.otf');
+}
+
+@font-face {
+  font-family: 'NikkeiJournal-Light';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'NikkeiJournal-Regular';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Regular.otf');
+}
+
+@font-face {
+  font-family: 'NikkeiJournal-RegularItalic';
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-RegularItalic.otf');
+}
+
+@font-face {
+  font-family: "EditorialNew-Italic";
+  src: url('./fonts/editorial-new/PPEditorialNew-Italic.otf');
+}
+
+@font-face {
+  font-family: "EditorialNew-Regular";
+  src: url('./fonts/editorial-new/PPEditorialNew-Regular.otf');
+}
+
+@font-face {
+  font-family: "EditorialNew-Ultrabold";
+  src: url('./fonts/editorial-new/PPEditorialNew-Ultrabold.otf');
+}
+
+@font-face {
+  font-family: "EditorialNew-UltraboldItalic";
+  src: url('./fonts/editorial-new/PPEditorialNew-UltraboldItalic.otf');
+}
+
+@font-face {
+  font-family: "EditorialNew-Ultralight";
+  src: url('./fonts/editorial-new/PPEditorialNew-Ultralight.otf');
+}
+
+@font-face {
+  font-family: "EditorialNew-UltralightItalic";
+  src: url('./fonts/editorial-new/PPEditorialNew-UltralightItalic.otf');
+}
+
+@font-face {
+  font-family: "LettraMono-Medium";
+  src: url('./fonts/lettra-mono/PPLettraMono-Medium.otf');
+}
+
+@font-face {
+  font-family: "LettraMono-MediumItalic";
+  src: url('./fonts/lettra-mono/PPLettraMono-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: "LettraMono-Ultralight";
+  src: url('./fonts/lettra-mono/PPLettraMono-Ultralight.otf');
+}
+
+@font-face {
+  font-family: "LettraMono-UltralightItalic";
+  src: url('./fonts/lettra-mono/PPLettraMono-UltralightItalic.otf');
+}
