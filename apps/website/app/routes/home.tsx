@@ -20,7 +20,7 @@ function Welcome() {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'center'
           })}
         >
           <p>Learn ?</p>
@@ -34,10 +34,12 @@ function Welcome() {
             gridTemplateRows: '1fr 1fr',
             justifyContent: 'space-between',
             width: '100%',
-            height: '100%',
+            height: '100%'
           })}
         >
-          <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiJournal-Ultrabold', fontSize: '30px' })}>matt</div>
+          <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiJournal-Ultrabold', fontSize: '30px' })}>
+            matt
+          </div>
           <div className={css({ alignSelf: 'start', fontFamily: 'EditorialNew-Regular', justifySelf: 'end' })}>who</div>
           <div className={css({ alignSelf: 'end', fontFamily: 'EditorialNew-Regular' })}>what</div>
           <div className={css({ alignSelf: 'end', justifySelf: 'end', fontFamily: 'EditorialNew-Regular' })}>why</div>
