@@ -23,13 +23,14 @@ function Welcome() {
             alignItems: 'center'
           })}
         >
-          <p>Learn ?</p>
+          <span>Learn ?</span>
           <NavLink to="/aboutme" end>
             About Me
           </NavLink>
         </nav>
         <div
           className={grid({
+            padding: '20px',
             gridTemplateColumns: '1fr 1fr',
             gridTemplateRows: '1fr 1fr',
             justifyContent: 'space-between',
@@ -40,7 +41,18 @@ function Welcome() {
           <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiJournal-Ultrabold', fontSize: '30px' })}>
             matt
           </div>
-          <div className={css({ alignSelf: 'start', fontFamily: 'EditorialNew-Regular', justifySelf: 'end' })}>who</div>
+          <div
+            className={css({
+              alignSelf: 'start',
+              fontFamily: 'EditorialNew-Regular',
+              justifySelf: 'end',
+              height: '45px',
+              alignContent: 'center',
+              textAlign: 'center'
+            })}
+          >
+            who
+          </div>
           <div className={css({ alignSelf: 'end', fontFamily: 'EditorialNew-Regular' })}>what</div>
           <div className={css({ alignSelf: 'end', justifySelf: 'end', fontFamily: 'EditorialNew-Regular' })}>why</div>
         </div>
