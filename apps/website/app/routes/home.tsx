@@ -11,7 +11,7 @@ import { css } from '../../styled-system/css';
 function Welcome() {
   return (
     <main>
-      <div className={flex({ flexDirection: 'column', height: '100dvh' })}>
+      <div className={flex({ flexDirection: 'column', height: '100dvh', background: '#010101' })}>
         <nav
           className={flex({
             flexDirection: 'column',
@@ -20,7 +20,8 @@ function Welcome() {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            color: 'text'
           })}
         >
           <span>Learn ?</span>
@@ -30,7 +31,10 @@ function Welcome() {
         </nav>
         <div
           className={grid({
-            padding: '20px',
+            padding: {
+              base: '20px',
+              sm: '30px'
+            },
             gridTemplateColumns: '1fr 1fr',
             gridTemplateRows: '1fr 1fr',
             justifyContent: 'space-between',
@@ -38,23 +42,50 @@ function Welcome() {
             height: '100%'
           })}
         >
-          <div className={css({ alignSelf: 'start', fontFamily: 'NikkeiJournal-Ultrabold', fontSize: '30px' })}>
-            matt
-          </div>
-          <div
+          <span
             className={css({
               alignSelf: 'start',
-              fontFamily: 'EditorialNew-Regular',
+              color: 'text',
+              textStyle: 'h1'
+            })}
+          >
+            <span>matt</span>
+            &nbsp;
+            <span
+              className={css({
+                display: {
+                  base: 'none',
+                  lg: 'inline'
+                }
+              })}
+            >
+              kanovsky
+            </span>
+          </span>
+          <span
+            className={css({
+              color: 'text',
+              alignSelf: 'start',
               justifySelf: 'end',
-              height: '45px',
+              pt: '12px',
               alignContent: 'center',
-              textAlign: 'center'
+              textAlign: 'center',
+              textStyle: 'h2'
             })}
           >
             who
+          </span>
+          <div className={css({ alignSelf: 'end', textStyle: 'h2', color: 'text' })}>what</div>
+          <div
+            className={css({
+              textStyle: 'h2',
+              alignSelf: 'end',
+              justifySelf: 'end',
+              color: 'text'
+            })}
+          >
+            why
           </div>
-          <div className={css({ alignSelf: 'end', fontFamily: 'EditorialNew-Regular' })}>what</div>
-          <div className={css({ alignSelf: 'end', justifySelf: 'end', fontFamily: 'EditorialNew-Regular' })}>why</div>
         </div>
       </div>
     </main>
