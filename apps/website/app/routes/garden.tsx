@@ -9,7 +9,7 @@ export default function Garden() {
       className={css({
         background: '#ACD8E9',
         width: '100%',
-        minHeight: '100vh',
+        minHeight: '100dvh',
         paddingY: '60px',
         alignContent: 'center',
         justifyContent: 'center',
