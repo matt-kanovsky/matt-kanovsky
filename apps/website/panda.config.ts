@@ -6,5 +6,6 @@ export default defineConfig({
   theme: {},
   exclude: [],
   outdir: 'styled-system',
-  presets: [cssReset],
+  jsxFramework: 'react',
+  presets: [cssReset]
 });
