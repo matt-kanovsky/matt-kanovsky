@@ -11,7 +11,7 @@ import { css } from '../../styled-system/css';
 function Welcome() {
   return (
     <main>
-      <div className={flex({ flexDirection: 'column', height: '100svh' })}>
+      <div className={flex({ flexDirection: 'column', height: '100dvh' })}>
         <nav
           className={flex({
             flexDirection: 'column',
