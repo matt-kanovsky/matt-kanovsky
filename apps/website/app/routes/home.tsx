@@ -5,13 +5,13 @@ export const meta: MetaFunction = () => {
 };
 
 import { NavLink } from 'react-router';
-import { css } from 'styled-system/css';
-import { flex, grid } from 'styled-system/patterns';
+import { flex, grid } from '../../styled-system/patterns';
+import { css } from '../../styled-system/css';
 
 function Welcome() {
   return (
     <main>
-      <div className={flex({ flexDirection: 'column', height: '100vh' })}>
+      <div className={flex({ flexDirection: 'column', height: '100svh' })}>
         <nav
           className={flex({
             flexDirection: 'column',
