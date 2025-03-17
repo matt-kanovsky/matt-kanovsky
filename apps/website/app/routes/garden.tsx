@@ -24,12 +24,11 @@ export default function Garden() {
           borderRadius: '20px',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '20px',
-          width: '60%',
-          minWidth: '400px',
+          width: '70%',
+          // minWidth: '400px',
           paddingTop: '40px',
           paddingBottom: '60px',
-          paddingX: '80px'
+          paddingX: { base: '40px', lg: '80px' }
         })}
       >
         <Link
@@ -37,14 +36,18 @@ export default function Garden() {
           className={css({
             color: 'white',
             fontFamily: 'LettraMono-Medium',
-            fontSize: '28px',
+            fontSize: {
+              base: '24px',
+              lg: '64px'
+            },
             textDecoration: 'none',
             _hover: { textDecoration: 'underline' }
           })}
         >
           enter
         </Link>
-        <TulipGarden rows={3} columns={3} />
+        <TulipGarden rows={3} columns={5} rowOffset={50} css={{ display: { base: 'none', lg: 'flex' } }} />
+        <TulipGarden rows={3} columns={3} rowOffset={25} css={{ display: { base: 'flex', lg: 'none' } }} />
       </div>
     </div>
   );
