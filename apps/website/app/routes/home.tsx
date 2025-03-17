@@ -4,31 +4,62 @@ export const meta: MetaFunction = () => {
   return [{ title: 'Home' }, { name: 'description', content: 'You ended up here' }];
 };
 
-import { NavLink } from 'react-router';
 import { flex, grid } from '../../styled-system/patterns';
 import { css } from '../../styled-system/css';
+
+const SquareHomage = () => {
+  return (
+    <div
+      className={css({
+        width: '100vw',
+        maxWidth: { base: '900px', lg: '1100px' },
+        maxHeight: '90dvh',
+        paddingX: { base: '30px', sm: '40px' },
+        paddingY: '100px',
+        display: 'flex'
+      })}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1192 1193">
+        <path
+          fill="#803BFF"
+          fill-opacity=".24"
+          d="M1189.48 0H1.982s1.498 226.5-1 362c-2.499 135.5.5 411 1 463s0 367.5 0 367.5H1189.48s2-174 2-331-2-861.5-2-861.5Z"
+        />
+        <path
+          fill="#3FFFA5"
+          fill-opacity=".4"
+          d="M123.481 1130h941.999s4-100.5 4-176 2.5-772 2.5-772-235.499.5-277.499-2c-42-2.5-161.5 0-181 0s-490.5 2-490.5 2l.5 948Z"
+        />
+        <path
+          fill="#FF3F3F"
+          fill-opacity=".64"
+          d="m952.48 357-712.999 3s-1.743 327.5-1.5 368c.242 40.5 2 345.5 2 345.5H949.48l3-716.5Z"
+        />
+        <path
+          fill="#D9D9D9"
+          fill-opacity=".6"
+          d="M834.48 536.5h-478c0 160.91 2.501 379 2.501 405s-2.501 46.934-2.501 72.5h475.5s0-77 2.5-130.5 0-347 0-347Z"
+        />
+      </svg>
+    </div>
+  );
+};
 
 function Welcome() {
   return (
     <main>
       <div className={flex({ flexDirection: 'column', height: '100dvh', background: '#010101' })}>
-        <nav
+        <div
           className={flex({
-            flexDirection: 'column',
             position: 'absolute',
             top: '50%',
             left: '50%',
-            transform: 'translate(-50%, -50%)',
-            justifyContent: 'center',
-            alignItems: 'center',
+            transform: 'translate(-50%, -47%)',
             color: 'text'
           })}
         >
-          <span>Learn ?</span>
-          <NavLink to="/aboutme" end>
-            About Me
-          </NavLink>
-        </nav>
+          <SquareHomage />
+        </div>
         <div
           className={grid({
             padding: {
