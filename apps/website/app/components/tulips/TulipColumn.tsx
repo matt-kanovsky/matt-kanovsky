@@ -13,9 +13,12 @@ interface TulipLogoProps extends React.HTMLAttributes<HTMLDivElement> {
   css?: SystemStyleObject;
 }
 
-export const TulipColumn: React.FC<TulipLogoProps> = ({ width, rows, index, css: cssProp, ...props }) => {
+export const TulipColumn: React.FC<TulipLogoProps> = ({ rows, index, css: cssProp, ...props }) => {
   let currentColor: TulipColor = index % 2 === 0 ? 'red' : 'orange';
-  const className = css(vstack.raw({ gap: '20px' }), cssProp);
+  const className = css(
+    vstack.raw({ gap: { base: '20px', lg: '30px' }, width: { base: '50px', lg: '70px' } }),
+    cssProp
+  );
   const tulips: TulipColor[] = [];
 
   for (let i = 0; i < rows; i++) {
@@ -28,9 +31,9 @@ export const TulipColumn: React.FC<TulipLogoProps> = ({ width, rows, index, css:
       {tulips.map((color) => {
         switch (color) {
           case 'red':
-            return <TulipRed width={width} />;
+            return <TulipRed />;
           case 'orange':
-            return <TulipOrange width={width} />;
+            return <TulipOrange />;
         }
       })}
     </div>
