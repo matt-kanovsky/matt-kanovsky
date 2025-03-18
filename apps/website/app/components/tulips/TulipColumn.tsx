@@ -3,6 +3,7 @@ import { TulipOrange } from './TulipOrange';
 import type { SystemStyleObject } from 'styled-system/types';
 import { vstack } from '../../../styled-system/patterns';
 import { css } from '../../../styled-system/css';
+import { AnimatedTulip } from './AnimatedTulip';
 
 type TulipColor = 'red' | 'orange';
 
@@ -31,9 +32,17 @@ export const TulipColumn: React.FC<TulipLogoProps> = ({ rows, index, css: cssPro
       {tulips.map((color) => {
         switch (color) {
           case 'red':
-            return <TulipRed />;
+            return (
+              <AnimatedTulip>
+                <TulipRed />
+              </AnimatedTulip>
+            );
           case 'orange':
-            return <TulipOrange />;
+            return (
+              <AnimatedTulip>
+                <TulipOrange />
+              </AnimatedTulip>
+            );
         }
       })}
     </div>
