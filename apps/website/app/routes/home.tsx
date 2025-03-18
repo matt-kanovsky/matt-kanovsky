@@ -15,11 +15,10 @@ const SquareHomage = () => {
         maxWidth: { base: '900px', lg: '1100px' },
         maxHeight: '90dvh',
         paddingX: { base: '30px', sm: '40px' },
-        paddingY: '100px',
-        display: 'flex'
+        paddingY: '100px'
       })}
     >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1192 1193">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1192 1193" width="100%" height="100%">
         <path
           fill="#803BFF"
           fill-opacity=".24"
