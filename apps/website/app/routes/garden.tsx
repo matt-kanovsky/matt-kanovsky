@@ -28,8 +28,8 @@ export default function Garden() {
           gap: '10px',
           width: '60%',
           minWidth: '280px',
-          paddingTop: { base: '20px', lg: '50px' },
-          paddingBottom: { base: '10px', lg: '30px' },
+          paddingTop: { base: '10px', lg: '30px' },
+          paddingBottom: { base: '20px', lg: '50px' },
           paddingX: '30px',
           height: '80dvh',
           minHeight: '560px'
