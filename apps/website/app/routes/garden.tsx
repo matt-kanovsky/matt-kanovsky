@@ -26,12 +26,11 @@ export default function Garden() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '10px',
-          width: '70%',
+          width: '75%',
           minWidth: '300px',
-          paddingTop: { base: '20px', lg: '20px' },
-          paddingBottom: { base: '40px', lg: '60px' },
-          maxWidth: '900px',
-          minHeight: '560px'
+          paddingTop: { base: '40px', lg: '40px' },
+          paddingBottom: { base: '60px', lg: '60px' },
+          maxWidth: '900px'
         })}
       >
         <Link
