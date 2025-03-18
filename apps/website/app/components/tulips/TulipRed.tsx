@@ -6,7 +6,14 @@ interface TulipLogoProps {
 
 export const TulipRed: React.FC<TulipLogoProps> = ({ className }) => {
   return (
-    <svg viewBox="0 0 53 133" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    <svg
+      viewBox="0 0 53 133"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      width="100%"
+      height="100%"
+    >
       <path
         fill="#FDEB7F"
         d="M1 80c12.61 0 17.82 6.713 19.16 13.308L19.529 87V61.5l7.322 1v5.334L29 90.5c-.07-15 14.494-18.194 19-16.5 0 18-13.33 21.564-19.15 21L27 133s-7.471-.5-7.471-6.5V101C6 100.177 1 93 1 80Z"
