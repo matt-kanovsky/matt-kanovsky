@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { css } from '../../styled-system/css';
+import me from '../assets/me.png';
 
 export default function AboutMe() {
   return (
@@ -58,7 +59,7 @@ export default function AboutMe() {
           })}
         >
           <img
-            src="app/assets/me.png"
+            src={me}
             alt="me"
             className={css({
               width: { base: '250px', sm: '400px', lg: '500px' },
