@@ -1,4 +1,4 @@
-import type { MetaFunction } from 'react-router';
+import { Link, type MetaFunction } from 'react-router';
 
 export const meta: MetaFunction = () => {
   return [
@@ -95,7 +95,8 @@ function Welcome() {
               kanovsky
             </span>
           </h1>
-          <span
+          <Link
+            to="/aboutme"
             className={css({
               color: 'text',
               alignSelf: 'start',
@@ -103,11 +104,13 @@ function Welcome() {
               pt: '12px',
               alignContent: 'center',
               textAlign: 'center',
-              textStyle: 'h2'
+              textStyle: 'h2',
+              textDecoration: 'none',
+              _hover: { textDecoration: 'underline' }
             })}
           >
             who
-          </span>
+          </Link>
           <div className={css({ alignSelf: 'end', textStyle: 'h2', color: 'text' })}>what</div>
           <div
             className={css({
