@@ -1,7 +1,10 @@
 import type { MetaFunction } from 'react-router';
 
 export const meta: MetaFunction = () => {
-  return [{ title: 'Home' }, { name: 'description', content: 'You ended up here' }];
+  return [
+    { title: 'Matt Kanovsky | Homage to the Square' },
+    { name: 'description', content: 'Matt Kanovsky | Homage to the Square' }
+  ];
 };
 
 import { flex, grid } from '../../styled-system/patterns';
@@ -72,7 +75,7 @@ function Welcome() {
             height: '100%'
           })}
         >
-          <span
+          <h1
             className={css({
               alignSelf: 'start',
               color: 'text',
@@ -91,7 +94,7 @@ function Welcome() {
             >
               kanovsky
             </span>
-          </span>
+          </h1>
           <span
             className={css({
               color: 'text',

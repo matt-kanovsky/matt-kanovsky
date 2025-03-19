@@ -1,7 +1,11 @@
-import { Link } from 'react-router';
+import { Link, type MetaFunction } from 'react-router';
 import { TulipGarden } from '../components/tulips/TulipGarden';
 import { css } from '../../styled-system/css';
 import { flex } from '../../styled-system/patterns';
+
+export const meta: MetaFunction = () => {
+  return [{ title: 'Matt Kanovsky | The Garden' }, { name: 'description', content: 'Matt Kanovsky | The Garden' }];
+};
 
 export default function Garden() {
   return (
