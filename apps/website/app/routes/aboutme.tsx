@@ -44,7 +44,8 @@ export default function AboutMe() {
             lineHeight: { base: '220px', lg: '360px' },
             fontFamily: 'EditorialNew-Ultralight',
             alignSelf: 'end',
-            textAlign: 'start '
+            textAlign: 'start ',
+            overflow: 'hidden'
           })}
         >
           me
