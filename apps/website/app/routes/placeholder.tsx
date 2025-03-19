@@ -21,9 +21,7 @@ export default function Placeholder() {
           fontSize: {
             base: '48px',
             lg: '100px'
-          },
-          textDecoration: 'none',
-          _hover: { textDecoration: 'underline' }
+          }
         })}
       >
         patience. time!
