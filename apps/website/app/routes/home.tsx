@@ -72,7 +72,8 @@ function Welcome() {
             gridTemplateRows: '1fr 1fr',
             justifyContent: 'space-between',
             width: '100%',
-            height: '100%'
+            height: '100%',
+            zIndex: 1
           })}
         >
           <h1
