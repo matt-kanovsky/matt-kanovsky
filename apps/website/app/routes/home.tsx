@@ -72,7 +72,8 @@ function Welcome() {
             gridTemplateRows: '1fr 1fr',
             justifyContent: 'space-between',
             width: '100%',
-            height: '100%'
+            height: '100%',
+            zIndex: 1
           })}
         >
           <h1
@@ -111,17 +112,31 @@ function Welcome() {
           >
             who
           </Link>
-          <div className={css({ alignSelf: 'end', textStyle: 'h2', color: 'text' })}>what</div>
-          <div
+          <Link
+            to="/patience"
+            className={css({
+              alignSelf: 'end',
+              textStyle: 'h2',
+              color: 'text',
+              textDecoration: 'none',
+              _hover: { textDecoration: 'underline' }
+            })}
+          >
+            what
+          </Link>
+          <Link
+            to="/patience"
             className={css({
               textStyle: 'h2',
               alignSelf: 'end',
               justifySelf: 'end',
-              color: 'text'
+              color: 'text',
+              textDecoration: 'none',
+              _hover: { textDecoration: 'underline' }
             })}
           >
             why
-          </div>
+          </Link>
         </div>
       </div>
     </main>
