@@ -14,7 +14,7 @@ export default function Garden() {
         background: '#ACD8E9',
         width: '100%',
         minHeight: '100dvh',
-        paddingY: '20px',
+        // paddingY: '20px',
         alignContent: 'center',
         justifyContent: 'center',
         display: 'flex'
@@ -26,14 +26,16 @@ export default function Garden() {
           justifySelf: 'center',
           alignSelf: 'center',
           bg: '#008662',
+          height: '90vh',
+          maxHeight: { base: '600px', lg: '800px' },
           borderRadius: '20px',
           alignItems: 'center',
           justifyContent: 'center',
           gap: '10px',
           width: '75%',
           minWidth: '300px',
-          paddingTop: { base: '40px', lg: '40px' },
-          paddingBottom: { base: '60px', lg: '60px' },
+          paddingTop: { base: '20px', lg: '30px' },
+          paddingBottom: { base: '50px', lg: '60px' },
           maxWidth: '900px'
         })}
       >

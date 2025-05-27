@@ -1,18 +1,48 @@
-import React from 'react';
+import { motion } from 'motion/react';
+import React, { useEffect, useMemo, useState } from 'react';
+import type { TulipColor } from './types';
 
 interface TulipLogoProps {
   className?: string;
+  tulipColor: TulipColor;
 }
 
-export const TulipOrange: React.FC<TulipLogoProps> = ({ className }) => {
+export const Tulip: React.FC<TulipLogoProps> = ({ className, tulipColor }) => {
+  const [start, setStart] = useState(false);
+  const repeatDelay = useMemo(() => {
+    return Math.random() * 10 + 3;
+  }, []);
+
+  const duration = useMemo(() => {
+    return Math.random() * 4 + 4;
+  }, []);
+
+  useEffect(() => {
+    const delay = Math.random() * 20;
+    setTimeout(() => setStart(true), delay * 1000);
+  }, []);
+
+  const fill = tulipColor === 'red' ? '#FF1303' : '#FF7500';
+
   return (
-    <svg
+    <motion.svg
       viewBox="0 0 53 133"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       width="100%"
       height="100%"
+      style={{
+        transformOrigin: '50% 100%'
+      }}
+      animate={
+        start
+          ? {
+              rotate: [0, 7, -5, 3, 0]
+            }
+          : {}
+      }
+      transition={{ duration: duration, ease: 'easeInOut', repeat: Infinity, repeatDelay: repeatDelay }}
     >
       <path
         fill="#FDEB7F"
@@ -27,9 +57,9 @@ export const TulipOrange: React.FC<TulipLogoProps> = ({ className }) => {
         d="M5 78c15 0 19.529 9.5 19.529 17V60.5h7.322v5.334L32 92.5c-.07-15 14.494-17.194 19-15.5 0 18-13.33 20.564-19.15 20l.15 34s-7.471-.5-7.471-6.5V99.323C11 98.5 5 91 5 78Z"
       />
       <path
-        fill="#FF7500"
+        fill={fill}
         d="M4 37.816V5.5c18.745 0 24.341 16.38 24.341 24.79C28.341 21.88 35.5 1.5 52 1.5V23c0 7.968 0 38.5-23.659 38.5C10.493 61.5 4 45.785 4 37.816Z"
       />
-    </svg>
+    </motion.svg>
   );
 };
