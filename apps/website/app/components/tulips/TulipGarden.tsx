@@ -16,13 +16,15 @@ export const TulipGarden: React.FC<TulipGardenProps> = ({ rows, columns, css: cs
         hstack.raw({
           gap: { base: '30px', lg: '40px' },
           justifySelf: 'center',
-          alignItems: 'end'
+          alignItems: 'end',
+          height: { base: 'calc(100% - 54px - 10px)', lg: 'calc(100% - 96px - 10px)' },
+          paddingTop: { base: '55px', lg: '100px' }
         }),
         cssProp
       )}
     >
       {Array.from({ length: columns }, (_, i) => (
-        <TulipColumn key={i} rows={rows} index={i} style={{ marginBottom: `${i * 25}px` }} />
+        <TulipColumn key={i} rows={rows} index={i} style={{ '--column-index': i } as React.CSSProperties} />
       ))}
     </div>
   );
