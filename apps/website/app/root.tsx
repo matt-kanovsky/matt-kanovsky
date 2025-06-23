@@ -2,7 +2,6 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 
 import type { Route } from './+types/root';
 import stylesheet from './index.css?url';
-import './fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -16,7 +15,42 @@ export const links: Route.LinksFunction = () => [
     href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
   },
   { rel: 'stylesheet', href: stylesheet },
-  { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }
+  { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+  {
+    rel: 'preload',
+    href: 'app/fonts/nikkei-journal/PPNikkeiJournal-Regular.otf',
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  },
+  {
+    rel: 'preload',
+    href: 'app/fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf',
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  },
+  {
+    rel: 'preload',
+    href: 'app/fonts/editorial-new/PPEditorialNew-Regular.otf',
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  },
+  {
+    rel: 'preload',
+    href: 'app/fonts/editorial-new/PPEditorialNew-Ultralight.otf',
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  },
+  {
+    rel: 'preload',
+    href: 'app/fonts/lettra-mono/PPLettraMono-Medium.otf',
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
