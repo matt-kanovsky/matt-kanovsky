@@ -32,9 +32,9 @@ export const TulipColumn: React.FC<TulipLogoProps> = ({ rows, index, css: cssPro
 
   return (
     <div className={className} {...props}>
-      {tulips.map((color) => (
-        <Tulip tulipColor={color} />
-      ))}
+      {tulips.map((color, i) => {
+        return <Tulip key={`r${index}-c${i}-${color}`} tulipColor={color} />;
+      })}
     </div>
   );
 };

@@ -10,80 +10,80 @@ body {
 
 @font-face {
   font-family: 'NikkeiJournal-Ultrabold';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf');
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'NikkeiJournal-Bold';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Bold.otf');
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'NikkeiJournal-Light';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Light.otf');
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'NikkeiJournal-Light';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-LightItalic.otf');
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-LightItalic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'NikkeiJournal-Regular';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Regular.otf');
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'NikkeiJournal-RegularItalic';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-RegularItalic.otf');
+  src: url('./fonts/nikkei-journal/PPNikkeiJournal-RegularItalic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'EditorialNew-Italic';
-  src: url('./fonts/editorial-new/PPEditorialNew-Italic.otf');
+  src: url('./fonts/editorial-new/PPEditorialNew-Italic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'EditorialNew-Regular';
-  src: url('./fonts/editorial-new/PPEditorialNew-Regular.otf');
+  src: url('./fonts/editorial-new/PPEditorialNew-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'EditorialNew-Ultrabold';
-  src: url('./fonts/editorial-new/PPEditorialNew-Ultrabold.otf');
+  src: url('./fonts/editorial-new/PPEditorialNew-Ultrabold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'EditorialNew-UltraboldItalic';
-  src: url('./fonts/editorial-new/PPEditorialNew-UltraboldItalic.otf');
+  src: url('./fonts/editorial-new/PPEditorialNew-UltraboldItalic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'EditorialNew-Ultralight';
-  src: url('./fonts/editorial-new/PPEditorialNew-Ultralight.otf');
+  src: url('./fonts/editorial-new/PPEditorialNew-Ultralight.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'EditorialNew-UltralightItalic';
-  src: url('./fonts/editorial-new/PPEditorialNew-UltralightItalic.otf');
+  src: url('./fonts/editorial-new/PPEditorialNew-UltralightItalic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'LettraMono-Medium';
-  src: url('./fonts/lettra-mono/PPLettraMono-Medium.otf');
+  src: url('./fonts/lettra-mono/PPLettraMono-Medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'LettraMono-MediumItalic';
-  src: url('./fonts/lettra-mono/PPLettraMono-MediumItalic.otf');
+  src: url('./fonts/lettra-mono/PPLettraMono-MediumItalic.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'LettraMono-Ultralight';
-  src: url('./fonts/lettra-mono/PPLettraMono-Ultralight.otf');
+  src: url('./fonts/lettra-mono/PPLettraMono-Ultralight.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'LettraMono-UltralightItalic';
-  src: url('./fonts/lettra-mono/PPLettraMono-UltralightItalic.otf');
+  src: url('./fonts/lettra-mono/PPLettraMono-UltralightItalic.otf') format('opentype');
 }
