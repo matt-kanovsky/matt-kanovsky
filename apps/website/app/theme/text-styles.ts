@@ -4,6 +4,7 @@ export const textStyles = defineTextStyles({
   h1: {
     value: {
       fontFamily: 'NikkeiJournal-Ultrabold',
+      fontWeight: 'normal',
       fontSize: {
         base: '64px',
         sm: '96px'
