@@ -14,11 +14,6 @@ body {
 }
 
 @font-face {
-  font-family: 'NikkeiJournal-Bold';
-  src: url('./fonts/nikkei-journal/PPNikkeiJournal-Bold.otf') format('opentype');
-}
-
-@font-face {
   font-family: 'NikkeiJournal-Light';
   src: url('./fonts/nikkei-journal/PPNikkeiJournal-Light.otf') format('opentype');
 }
