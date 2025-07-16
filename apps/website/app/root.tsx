@@ -3,6 +3,8 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 import type { Route } from './+types/root';
 import stylesheet from './index.css?url';
 import NikkeiJournalUltrabold from './fonts/nikkei-journal/PPNikkeiJournal-Ultrabold.otf';
+import EditorialNewRegular from './fonts/editorial-new/PPEditorialNew-Regular.otf';
+import LettraMonoMedium from './fonts/lettra-mono/PPLettraMono-Medium.otf';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -20,6 +22,20 @@ export const links: Route.LinksFunction = () => [
   {
     rel: 'preload',
     href: NikkeiJournalUltrabold,
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  },
+  {
+    rel: 'preload',
+    href: EditorialNewRegular,
+    as: 'font',
+    type: 'font/otf',
+    crossOrigin: 'anonymous'
+  },
+  {
+    rel: 'preload',
+    href: LettraMonoMedium,
     as: 'font',
     type: 'font/otf',
     crossOrigin: 'anonymous'
