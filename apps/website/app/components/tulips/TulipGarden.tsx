@@ -14,7 +14,7 @@ export const TulipGarden: React.FC<TulipGardenProps> = ({ rows, columns, css: cs
     <div
       className={css(
         hstack.raw({
-          gap: { base: '30px', lg: '40px' },
+          gap: { base: '30px', lg: '60px' },
           justifySelf: 'center',
           alignItems: 'end',
           height: { base: 'calc(100% - 54px - 10px)', lg: 'calc(100% - 96px - 10px)' },

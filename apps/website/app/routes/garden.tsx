@@ -26,8 +26,8 @@ export default function Garden() {
           justifySelf: 'center',
           alignSelf: 'center',
           bg: '#008662',
-          height: '90vh',
-          maxHeight: { base: '600px', lg: '800px' },
+          height: '85vh',
+          maxHeight: { base: '600px', lg: '1000px' },
           borderRadius: '20px',
           alignItems: 'center',
           justifyContent: 'center',
@@ -36,7 +36,7 @@ export default function Garden() {
           minWidth: '300px',
           paddingTop: { base: '20px', lg: '30px' },
           paddingBottom: { base: '50px', lg: '60px' },
-          maxWidth: '900px'
+          maxWidth: '1000px'
         })}
       >
         <Link
